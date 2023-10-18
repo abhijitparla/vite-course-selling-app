@@ -7,6 +7,7 @@ import './index.css'
 import { createBrowserRouter,
   RouterProvider, } from 'react-router-dom'
 import Dashboard from './components/Dashboard.jsx'
+import AddNewCourse from './components/AddNewCourse.jsx'
 
   const router = createBrowserRouter([
     {
@@ -23,7 +24,11 @@ import Dashboard from './components/Dashboard.jsx'
     },{
       path:"/dashboard",
       element: <Dashboard/>
+    },{
+      path:'/addNewCourse',
+      element: <AddNewCourse/>
     }
+
   ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
