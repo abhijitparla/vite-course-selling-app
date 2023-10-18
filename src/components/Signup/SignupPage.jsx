@@ -50,6 +50,7 @@ const SignupPage = (props) => {
               setErrorText('')
               setEmailvalid(false)
               localStorage.setItem('token', json.token)
+              navigate('/dashboard')
             }
           })
         }
@@ -59,9 +60,7 @@ const SignupPage = (props) => {
         marginTop: '120px'
     }}>
     <center>
-    <h1 onClick={
-        console.log("Welocme to the jungle")
-    }>Welcome to Zackormie</h1>
+    <h1>Welcome to Zackormie</h1>
       <Card variant="outlined" style={{
         width:'350px',
         backgroundColor: 'lightgrey'
